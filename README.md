@@ -155,6 +155,7 @@ python manage.py collectstatic
 
 ```bash
 python manage.py makemigrations myapp
+python manage.py sqlmigrate myapp 0001
 python manage.py migrate
 ```
 
