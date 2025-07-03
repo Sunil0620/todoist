@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-b)6l158e*n8_14
 DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
 
 # Update this after you create your PythonAnywhere account
-ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,0.0.0.0').split(',')
+ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,0.0.0.0,todoist.onrender.com').split(',')
 
 
 # Application definition
