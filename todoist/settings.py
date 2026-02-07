@@ -25,9 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-b)6l158e*n8_1435fzxw#9v3yxu9-wyklz6kerc)#2t5^t4)m(')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
-#DEBUG = True  # Changed to True for development. WHEN DEPLOYING TO PRODUCTION, CHANGE THIS BACK TO False!!!!
-#DEBUG = os.environ.get("DJANGO_DEBUG", "True") == "True" 
+DEBUG = os.environ.get("DJANGO_DEBUG", "True") == "True"
+# DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
+# DEBUG = True  # Changed to True for development. WHEN DEPLOYING TO PRODUCTION, CHANGE THIS BACK TO False!!!!
+
 
 # Update this after you create your Render service and get the domain name
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1,0.0.0.0,todoist-ux10.onrender.com').split(',')
